@@ -8,15 +8,14 @@
     <title>Portfolio - Alexis Besnard</title>
 </head>
 <body>
+    <!-- section HOME -->
     <!-- menu responsive -->
     <header>
         <nav>
-            <a href="" class="logo">portfolio</a>
-            <div class="toggle"></div>
             <ul>
-                <li><a href="#" class="menu-links">Home</a></li>
-                <li><a href="#" class="menu-links">About</a></li>
-                <li><a href="#" class="menu-links">Works</a></li>
+                <li><a href="" class="menu-links">Home</a></li>
+                <li><a href="#about" class="menu-links">About</a></li>
+                <li><a href="#work" class="menu-links">Works</a></li>
                 <li><a href="#" class="menu-links">Contact</a></li>
             </ul>
         </nav>
@@ -29,11 +28,53 @@
         </div>
     </section>
 
-    <!-- section HOME -->
-    <h1>Portefolio</h1>
-    <!-- section About -->
     <!-- section Works -->
+    <section class="work" id="work">
+        <div class="heading white">
+            <h2>Works</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="./assets/img/house_archi.png">
+                <a href="#" class="cta">Architecture</a>
+            </div>
+            <div class="workBx">
+                <img src="./assets/img/pc_design.png">
+                <a href="#" class="cta">Design</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Je suis Infographiste 3D</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quaerat molestias explicabo aspernatur, assumenda, commodi velit aliquam 
+                    quisquam itaque praesentium ut laboriosam nihil minima voluptatibus, quis 
+                    ea doloribus voluptate exercitationem dolorum. <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere ad 
+                    culpa mollitia dolore assumenda beatae amet nesciunt quae reprehenderit? 
+                    Dignissimos et voluptates, saepe iste consectetur cumque earum necessitatibus magni?</p>
+            </div>
+            <div class="w50 img-center">
+                <img src="./assets/img/P1050781.JPG" class="img">
+            </div>
+        </div>
+    </section>
     <!-- Section Contact -->
-    
+
+    <!-- sticky menu js -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
